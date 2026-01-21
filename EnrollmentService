@@ -1,0 +1,42 @@
+package com.university.enrollment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EnrollmentServicempl implements EnrollmentService {
+
+    private List<Enrollment> enrollments = new ArrayList<>();
+
+    @Override
+    public void enroll(String studentId, String courseCode) throws Exception {
+
+        for (Enrollment e : enrollments) {
+            if (e.getStudentId().equals(studentId) &&
+                e.getCourseCode().equals(courseCode) &&
+                e.getStatus().equals("ENROLLED")) {
+                throw new Exception("Student already enrolled");
+            }
+        }
+
+        Enrollment enrollment = new Enrollment(studentId, courseCode);
+        enrollments.add(enrollment);
+
+        System.out.println("✅ Enrolled successfully");
+    }
+
+    @Override
+    public void drop(String studentId, String courseCode) throws Exception {
+
+        for (Enrollment e : enrollments) {
+            if (e.getStudentId().equals(studentId) &&
+                e.getCourseCode().equals(courseCode) &&
+                e.getStatus().equals("ENROLLED")) {
+                e.drop();
+                System.out.println("❌ Course dropped successfully");
+                return;
+            }
+        }
+
+        throw new Exception("Enrollment not found");
+    }
+}
