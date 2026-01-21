@@ -22,7 +22,7 @@ This project demonstrates core **Object-Oriented Programming (OOP)** principles,
 - **[Student 4 Name]** – Enrollment System (Component 3)  
 - **[Student 5 Name]** – Grade Management (Component 4)  
 - **[Student 6 Name]** – Notification System (Component 5)  
-- **[MAHAMAT ISSA HASSAN]** – Reporting System (Component 6)  
-- **[Student 8 Name]** – Authentication & Data Persistence (Components 7 & 8)
+- **[Student 6 Nam]** – Reporting System (Component 6)  
+- **[MAHAMAT ISSA HASSAN]** – Authentication & Data Persistence (Components 7 & 8)
 
 ---
