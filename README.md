@@ -1,5 +1,5 @@
 # university-management-system
-# University Course Management System
+# University Course  group 1Management System
 
 ## 📘 Project Overview
 A console-based Java application designed to manage university courses, users, enrollments, and grades.  
